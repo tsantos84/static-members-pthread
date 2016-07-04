@@ -8,8 +8,6 @@ in thread context (e.g: \Thread::run() method).
 ## Sample Code
 
 ```php
-<?php
-
 require 'MyClass.php';
 require 'MyThread.php';
 
@@ -38,5 +36,5 @@ Run the below code to create an image with PHP 7 with pthreads enabled.
 
 ## Issue tracking
 
-    $ GitHub: https://github.com/composer/composer/issues/5482
-    $ PHP Bugs: https://bugs.php.net/bug.php?id=72528
+* [GitHub](https://github.com/composer/composer/issues/5482) - As the issues was found using the composer autoloader inside the thread
+* [PHP Bugs](https://bugs.php.net/bug.php?id=72528)
