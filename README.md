@@ -18,6 +18,35 @@ $thread = new MyThread();
 $thread->start() && $thread->join();
 ```
 
+## Expected output
+
+```php
+array(2) {
+  ["foo"]=>
+  string(3) "bar"
+  ["bar"]=>
+  string(3) "baz"
+}
+array(2) {
+  ["foo"]=>
+  string(3) "bar"
+  ["bar"]=>
+  string(3) "baz"
+}
+```
+
+## Current output
+```php
+array(2) {
+  ["foo"]=>
+  string(3) "bar"
+  ["bar"]=>
+  string(3) "baz"
+}
+NULL
+```
+
+
 ## Building the PHP Docker Images
 
 Run the below code to create an image with PHP 5.6 with pthreads enabled.
